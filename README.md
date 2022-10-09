@@ -44,6 +44,6 @@ This repository is under MIT License.
 
 ## documentation
 <br>
-  <img src="imgFlypy.png" width="150">
+  <img src="imgReadme/imgFlypy.png" width="150">
   <br>
    press space for jum
