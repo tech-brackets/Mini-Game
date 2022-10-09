@@ -40,3 +40,10 @@ $ git push -u origin name-branch
 ## License
 
 This repository is under MIT License.
+
+
+## documentation
+<br>
+  <img src="imgFlypy.png" width="150">
+  <br>
+   press space for jum
