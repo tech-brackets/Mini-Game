@@ -3,8 +3,9 @@ const block = document.querySelector('#block');
 const hole = document.querySelector('#hole');
 let jumping = 0;
 let counter = 0;
-Window.score = 0;
 var loop = [];
+Window.score = 0;
+
 hole.addEventListener("animationiteration", function () {
     let random = -(Math.random() * 300 + 150);
     hole.style.top = random + "px";
@@ -28,10 +29,8 @@ setInterval(() => {
         window.location.reload();
         carakter.style.top = 100 + 'px'
         counter = 0
-
     }
-    score.innerHTML = Window.score;
-
+    score.textContent = Window.score;
     Window.score++;
 
 }, 10);
@@ -50,30 +49,21 @@ function jum() {
             jumping = 0;
             jumcount = 0;
         }
-
         jumcount++
-
     }, 10);
-
 }
 
-this.clearInterval
 window.addEventListener('keydown', function (e) {
-
     if (e.code == 'Space') {
         jum()
         loop.push(setInterval(() => {
             jum()
         }, 10))
     }
-
-
 })
 
 window.addEventListener('keyup', function (e) {
     if (e.code == 'Space') {
         loop.map(e => this.clearInterval(e))
     }
-
-
 })
